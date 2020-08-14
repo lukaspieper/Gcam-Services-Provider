@@ -11,5 +11,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build with Gradle
-      run: ./gradlew build
+    - name: Build Debug APK with Gradle
+      run: ./gradlew assembleDebug
+    - name: Upload APK
+      uses: actions/upload-artifact@v2
+      with:
+        name: App
+        path: ${{ github.workspace }}/app/build/outputs/apk/debug/app-debug.apk
