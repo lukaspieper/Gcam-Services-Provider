@@ -3,11 +3,13 @@
     package="com.google.android.gms">
 
     <application
-        android:allowBackup="true"
+        android:forceQueryable="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        tools:targetApi="30">
 
         <provider
             android:name=".GServicesProvider"
