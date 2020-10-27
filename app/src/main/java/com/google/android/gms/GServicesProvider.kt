@@ -4,6 +4,8 @@ import android.content.ContentProvider
 import android.content.ContentValues
 import android.database.Cursor
 import android.net.Uri
+import android.os.Bundle
+import android.os.CancellationSignal
 
 class GServicesProvider : ContentProvider() {
 
@@ -21,6 +23,16 @@ class GServicesProvider : ContentProvider() {
         return null
     }
 
+    /*For API 30 - Android 11 compatibility */
+    override fun query(
+        uri: Uri,
+        projection: Array<out String>?,
+        queryArgs: Bundle?,
+        cancellationSignal: CancellationSignal?
+    ): Cursor? {
+        return null;
+    }
+
     override fun getType(uri: Uri): String? {
         return null
     }
@@ -33,6 +45,11 @@ class GServicesProvider : ContentProvider() {
         throw UnsupportedOperationException()
     }
 
+    /*For API 30 - Android 11 compatibility */
+    override fun delete(uri: Uri, extras: Bundle?): Int {
+        throw UnsupportedOperationException();
+    }
+
     override fun update(
         uri: Uri,
         values: ContentValues?,
@@ -40,5 +57,10 @@ class GServicesProvider : ContentProvider() {
         selectionArgs: Array<out String>?
     ): Int {
         throw UnsupportedOperationException()
+    }
+
+    /*For API 30 - Android 11 compatibility */
+    override fun update(uri: Uri, values: ContentValues?, extras: Bundle?): Int {
+        throw UnsupportedOperationException();
     }
 }
