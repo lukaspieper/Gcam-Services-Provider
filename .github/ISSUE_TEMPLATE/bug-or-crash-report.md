@@ -1,6 +1,6 @@
 ---
 name: Bug or crash report
-about: Create a report to help us improve
+about: Create a report to help me improve
 title: ''
 labels: ''
 assignees: ''
