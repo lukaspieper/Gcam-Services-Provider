@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="de.lukaspieper.gcam.services">
+    package="com.google.android.gms">
 
     <application
         android:forceQueryable="true"
@@ -12,7 +12,7 @@
         tools:targetApi="30">
 
         <provider
-            android:name="com.google.android.gms.GServicesProvider"
+            android:name=".GServicesProvider"
             android:authorities="com.google.android.gsf.gservices"
             android:exported="true"
             tools:ignore="ExportedContentProvider" />
