@@ -12,3 +12,11 @@ microG is a open source re-implementation of the Google Play Services. Among oth
 #### How to install this app
 
 If you can, the recommended way is to build the app from source. After all, software is usually a matter of trust. Alternatively you can find an apk for sideloading under [releases](https://github.com/lukaspieper/Gcam-Services-Provider/releases).
+
+### Compatibility
+
+|Google camera version|Requirements                        |Relevant issues                                                                              |
+|---------------------|------------------------------------|---------------------------------------------------------------------------------------------|
+|7.4                  |                                    |                                                                                             |
+|7.5                  |`--force-queryable`                 |[#6](https://github.com/lukaspieper/Gcam-Services-Provider/issues/6)                         |
+|>=7.6                |Compatible Android OS or modded Gcam|[#22](https://github.com/lukaspieper/Gcam-Services-Provider/issues/22#issuecomment-814239882)|
