@@ -1,0 +1,12 @@
+android_app {
+    name: "GcamServicesProvider",
+    srcs: [
+        "app/src/main/java/**/*.kt",
+    ],
+    resource_dirs: [
+        "app/src/main/res",
+    ],
+    manifest: "app/src/main/AndroidManifest.xml",
+    sdk_version: "current",
+    product_specific: true,
+}
