@@ -5,7 +5,6 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "de.lukaspieper.gcam.services"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 2
