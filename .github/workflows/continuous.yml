@@ -7,14 +7,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+
     - name: set up JDK 11
       uses: actions/setup-java@v1
       with:
         java-version: '11'
-    - name: Build Debug APK with Gradle
-      run: ./gradlew assembleDebug
-    - name: Upload APK
+
+    - name: Build basic APK with Gradle
+      run: ./gradlew assembleBasicDebug
+
+    - name: Build photos APK with Gradle
+      run: ./gradlew assemblePhotosDebug
+
+    - name: Upload APKs
       uses: actions/upload-artifact@v2
       with:
-        name: App
-        path: ${{ github.workspace }}/app/build/outputs/apk/debug/app-debug.apk
+        name: APKs
+        path: ${{ github.workspace }}/app/build/outputs/apk/**/debug/*.apk
