@@ -1,4 +1,4 @@
-package com.google.android.gms
+package de.lukaspieper.gcam
 
 import android.content.ContentProvider
 import android.content.ContentValues
