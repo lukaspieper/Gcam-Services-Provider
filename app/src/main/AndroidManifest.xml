@@ -36,6 +36,7 @@
                 <data android:scheme="content" />
 
                 <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
                 <data android:mimeType="application/vnd.google.panorama360+jpg" />
             </intent-filter>
 
