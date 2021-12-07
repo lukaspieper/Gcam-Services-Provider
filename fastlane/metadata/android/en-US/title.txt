@@ -1,1 +1,1 @@
-Gcam Services Provider
+Gcam Services Provider (Basic)
