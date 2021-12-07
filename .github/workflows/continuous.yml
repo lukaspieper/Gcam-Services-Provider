@@ -27,3 +27,9 @@ jobs:
       with:
         name: APKs
         path: ${{ github.workspace }}/app/build/outputs/apk/**/debug/*.apk
+        
+  fastlane-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ashutoshgngwr/validate-fastlane-supply-metadata@v1
