@@ -19,7 +19,7 @@ Currently there are two versions of this app named "basic" and "photos". "Basic"
 
 In short: if you have Google Photos installed go with "basic" else install the "photos" version.
 
-If you can, the recommended way is to build the app from source. After all, software is usually a matter of trust. Alternatively you can find an apk for sideloading under [releases](https://github.com/lukaspieper/Gcam-Services-Provider/releases).
+If you can, the recommended way is to build the app from source. After all, software is usually a matter of trust. Alternatively you can find an apk for sideloading under [releases](https://github.com/lukaspieper/Gcam-Services-Provider/releases), or [download it on F-Droid](https://f-droid.org/packages/de.lukaspieper.gcam.services/).
 
 Note that this app comes without UI and therefore has no icon in the app drawer. But of course it is listed in the Android settings (e.g. for uninstallation).
 
