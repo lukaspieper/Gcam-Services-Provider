@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdk 31
+    namespace 'de.lukaspieper.gcam.services'
 
     defaultConfig {
         minSdk 19
