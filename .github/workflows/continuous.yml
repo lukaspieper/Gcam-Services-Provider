@@ -4,12 +4,7 @@ on: [push, pull_request]
 
 jobs:
   validate:
-    name: Validate Gradle Wrapper
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-    - uses: gradle/wrapper-validation-action@v1
+    uses: lukaspieper/android-actions/.github/workflows/validate-gradlew.yml@main
 
   build:
     runs-on: ubuntu-latest
@@ -17,12 +12,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Setup Java
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'zulu'
-        java-version: 11
 
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
@@ -37,11 +26,12 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: APKs
-        path: ${{ github.workspace }}/app/build/outputs/apk/**/debug/*.apk
+        path: app/build/outputs/apk/**/debug/*.apk
         
   fastlane-validate:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
+      
       - uses: ashutoshgngwr/validate-fastlane-supply-metadata@v1
