@@ -15,7 +15,8 @@ Since April 2023 GrapheneOS is able to run Gcam without additional steps. Here i
 the [changelog](https://grapheneos.org/releases#2023040400):
 
 > add generic compatibility shim catching the exception from the Gservices provider being missing to enable apps like
-> Google Camera [...] to work without GSF installed since they don't have any actual hard dependency on either GSF or Play
+> Google Camera [...] to work without GSF installed since they don't have any actual hard dependency on either GSF or
+> Play
 > services
 
 Before that, back in July 2021, GrapheneOS implemented a compatibility layer to use the original Google Play services
@@ -50,10 +51,10 @@ Android settings (e.g. for uninstallation).
 
 ### Gcam Compatibility
 
-| Google camera version | Requirements                         | Relevant issues                                                                               |
-|-----------------------|--------------------------------------|-----------------------------------------------------------------------------------------------|
-| 7.4 & 7.5             |                                      |                                                                                               |
-| >=7.6                 | Compatible Android OS or modded Gcam | [#22](https://github.com/lukaspieper/Gcam-Services-Provider/issues/22#issuecomment-814239882) |
+| Google camera version | Requirements                                                                                                 | Relevant issues                                                                               |
+|-----------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| 7.4 & 7.5             |                                                                                                              |                                                                                               |
+| >=7.6                 | [Compatible Android OS](https://github.com/lukaspieper/Gcam-Services-Provider/discussions/28) or modded Gcam | [#22](https://github.com/lukaspieper/Gcam-Services-Provider/issues/22#issuecomment-814239882) |
 
 ## Known from/recommended by
 
