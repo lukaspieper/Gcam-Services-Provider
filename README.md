@@ -33,7 +33,7 @@ access).
 
 ## How to install this app?
 
-> Using GrapheneOS? Make sure you read the comparison with GrapheneOS' Sandboxed Play services above!
+> Using GrapheneOS? Make sure you read the comparison with *GrapheneOS' Gcam support* above!
 
 Currently there are two versions of this app named "basic" and "photos". "Basic" includes everything you need to get
 Gcam running but the button showing the last taken photo in full size will not work. The "photos" version has all
