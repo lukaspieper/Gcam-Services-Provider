@@ -1,9 +1,15 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
+
+kotlin {
+    jvmToolchain(17)
+}
 
 android {
-    compileSdk 31
     namespace 'de.lukaspieper.gcam.services'
+    compileSdk 34
 
     defaultConfig {
         minSdk 19
@@ -23,9 +29,4 @@ android {
             applicationId 'com.google.android.apps.photos'
         }
     }
-}
-
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
