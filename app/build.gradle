@@ -29,4 +29,11 @@ android {
             applicationId 'com.google.android.apps.photos'
         }
     }
+
+    // No benefit outside of Google Play, disabled for IzzyOnDroid
+    // https://github.com/lukaspieper/Gcam-Services-Provider/issues/122#issuecomment-1930811074
+    dependenciesInfo {
+        includeInApk false
+        includeInBundle false
+    }
 }
