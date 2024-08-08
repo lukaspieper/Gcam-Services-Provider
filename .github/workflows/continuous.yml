@@ -3,12 +3,8 @@ name: continuous
 on: [push, pull_request]
 
 jobs:
-  validate:
-    uses: lukaspieper/android-actions/.github/workflows/validate-gradlew.yml@main
-
   build:
     runs-on: ubuntu-latest
-    needs: validate
 
     steps:
     - uses: actions/checkout@v4
@@ -20,7 +16,7 @@ jobs:
         java-version: 17
 
     - name: Setup Gradle
-      uses: gradle/actions/setup-gradle@v3
+      uses: gradle/actions/setup-gradle@v4
 
     - name: Build basic APK with Gradle
       run: ./gradlew assembleBasicDebug
