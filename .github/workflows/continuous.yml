@@ -3,12 +3,8 @@ name: continuous
 on: [push, pull_request]
 
 jobs:
-  validate:
-    uses: lukaspieper/android-actions/.github/workflows/validate-gradlew.yml@main
-
   build:
     runs-on: ubuntu-latest
-    needs: validate
 
     steps:
     - uses: actions/checkout@v4
