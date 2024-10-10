@@ -8,8 +8,9 @@ used on devices without Google Play Services.
 
 ### Comparison: [GrapheneOS' Gcam support](https://grapheneos.org/usage#google-camera)
 
-**The only reason to consider Gcam-Services-Provider on GrapheneOS is the ability to use the button in Gcam that opens
-the last taken photo without having Google Photos installed. If you can do without it, you don't need this app.**
+> [!NOTE]
+> The only reason to consider Gcam-Services-Provider on GrapheneOS is the ability to use the button in Gcam that opens
+> the last taken photo without having Google Photos installed. If you can do without it, you don't need this app.
 
 Since April 2023 GrapheneOS is able to run Gcam without additional steps. Here is the relevant part of
 the [changelog](https://grapheneos.org/releases#2023040400):
@@ -20,9 +21,11 @@ the [changelog](https://grapheneos.org/releases#2023040400):
 > services
 
 Before that, back in July 2021, GrapheneOS implemented a compatibility layer to use the original Google Play services
-without advanced permissions. For Gcam it was sufficient to install the Google Service Framework (GSF). <ins>If you
-already use the Sandboxed Play services, or you plan to use an app that requires Play services, you cannot use the Gcam
-Services Provider for technical reasons. This limitation applies beyond the boundaries of a user profile.</ins>
+without advanced permissions. For Gcam it was sufficient to install the Google Service Framework (GSF). 
+
+> [!CAUTION]
+> If you already use the Sandboxed Play services or plan to use it in future, you cannot use the Gcam Services
+> Provider for technical reasons. **This limitation applies beyond the boundaries of a user profile.**
 
 ### Comparison: [microG](https://github.com/microg)
 
@@ -34,6 +37,7 @@ access).
 
 ## How to install this app?
 
+> [!IMPORTANT]
 > Using GrapheneOS? Make sure you read the comparison with *GrapheneOS' Gcam support* above!
 
 Currently there are two versions of this app named "basic" and "photos". "Basic" includes everything you need to get
