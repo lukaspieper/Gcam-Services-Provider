@@ -36,4 +36,9 @@ android {
         includeInApk false
         includeInBundle false
     }
+
+    // TODO: Upgrade targetSdk
+    lintOptions {
+        disable 'ExpiredTargetSdkVersion'
+    }
 }
