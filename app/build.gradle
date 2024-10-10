@@ -14,8 +14,8 @@ android {
     defaultConfig {
         minSdk 19
         targetSdk 31
-        versionCode 7
-        versionName "1.5.1"
+        versionCode 8
+        versionName "1.5.2"
     }
 
     flavorDimensions 'default'
