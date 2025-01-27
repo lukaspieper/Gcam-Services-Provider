@@ -24,6 +24,9 @@ jobs:
     - name: Build photos APK with Gradle
       run: ./gradlew assemblePhotosDebug
 
+    - name: Build photosonly APK with Gradle
+      run: ./gradlew assemblePhotosonlyDebug
+
     - name: Upload APKs
       uses: actions/upload-artifact@v4
       with:

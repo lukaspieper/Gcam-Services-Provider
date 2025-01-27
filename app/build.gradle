@@ -28,6 +28,10 @@ android {
             dimension 'default'
             applicationId 'com.google.android.apps.photos'
         }
+        photosonly {
+            dimension 'default'
+            applicationId 'com.google.android.apps.photos'
+        }
     }
 
     // No benefit outside of Google Play, disabled for IzzyOnDroid
