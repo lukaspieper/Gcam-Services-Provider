@@ -21,11 +21,7 @@ the [changelog](https://grapheneos.org/releases#2023040400):
 > services
 
 Before that, back in July 2021, GrapheneOS implemented a compatibility layer to use the original Google Play services
-without advanced permissions. For Gcam it was sufficient to install the Google Service Framework (GSF). 
-
-> [!CAUTION]
-> If you already use the Sandboxed Play services or plan to use it in future, you cannot use the Gcam Services
-> Provider for technical reasons. **This limitation applies beyond the boundaries of a user profile.**
+without advanced permissions. For Gcam it was sufficient to install the Google Service Framework (GSF).
 
 ### Comparison: [microG](https://github.com/microg)
 
@@ -40,10 +36,10 @@ access).
 > [!IMPORTANT]
 > Using GrapheneOS? Make sure you read the comparison with *GrapheneOS' Gcam support* above!
 
-Currently there are two versions of this app named "basic" and "photos". "Basic" includes everything you need to get
+There are three versions of this app named "basic", "photos", and "photosonly". "Basic" includes everything you need to get
 Gcam running but the button showing the last taken photo in full size will not work. The "photos" version has all
 features from "basic" and adds support for this button but you cannot have the Google Photos app installed for technical
-reasons.
+reasons. The "photosonly" version adds support for this button without a shim for GSF; it is meant to be used on GrapheneOS alongside the sandboxed Play Services.
 
 Note that this app comes without UI and therefore has no icon in the app drawer. But of course it is listed in the
 Android settings (e.g. for uninstallation).
@@ -52,6 +48,7 @@ Android settings (e.g. for uninstallation).
 |----------------|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Basic version  | - Google Service Framework (GSF)<br/>- microg                     | [GitHub](https://github.com/lukaspieper/Gcam-Services-Provider/releases)<br/>[F-Droid](https://f-droid.org/de/packages/de.lukaspieper.gcam.services/) |
 | Photos version | - Google Service Framework (GSF)<br/>- microg<br/>- Google Photos | [GitHub](https://github.com/lukaspieper/Gcam-Services-Provider/releases)                                                                              |
+| Photosonly version | - microg<br/>- Google Photos | [GitHub](https://github.com/lukaspieper/Gcam-Services-Provider/releases) |
 
 ### Gcam Compatibility
 
