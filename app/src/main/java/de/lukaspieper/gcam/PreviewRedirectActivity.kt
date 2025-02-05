@@ -9,14 +9,11 @@ class PreviewRedirectActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         Log.d(javaClass.simpleName, intent.toString())
 
-        if (intent.`package` == packageName) {
-            intent.data?.let { uri ->
-                val intent = Intent(Intent.ACTION_VIEW, uri)
-                startActivity(intent)
-            }
+        intent.data?.let { uri ->
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
         }
 
         finish()
