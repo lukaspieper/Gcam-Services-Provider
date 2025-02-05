@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:forceQueryable="true"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoDisplay"
+        tools:targetApi="30">
+
+        <provider
+            android:name="de.lukaspieper.gcam.GServicesProvider"
+            android:authorities="com.google.android.gsf.gservices"
+            android:exported="true"
+            tools:ignore="ExportedContentProvider"
+            tools:node="remove" />  <!-- remove this provider for the photosonly flavor -->
+
+        <activity
+            android:name="de.lukaspieper.gcam.PreviewRedirectActivity"
+            android:exported="true">
+
+            <!-- Credits to Calyx developers: -->
+            <!-- https://gitlab.com/CalyxOS/platform_external_calyx_GCamPhotosPreview -->
+            <intent-filter>
+                <action android:name="com.android.camera.action.REVIEW" />
+                <action android:name="android.provider.action.REVIEW" />
+                <action android:name="android.provider.action.REVIEW_SECURE" />
+                <action android:name="com.google.android.apps.photos.mars.api.ACTION_REVIEW" />
+                <action android:name="com.google.android.apps.photos.mars.api.ACTION_REVIEW_SECURE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="content" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="application/vnd.google.panorama360+jpg" />
+            </intent-filter>
+
+            <!-- Needed only so GCam can query for and find us -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
