@@ -1,5 +1,15 @@
 This app "simulates" the Google Play Services that the Google Camera app (Gcam) requires, allowing the camera app to be used on devices without Google Play Services. Note that this app comes without UI and therefore has no icon in the app drawer. But of course it is listed in the Android settings (e.g. for uninstallation).
 
+<b>What is the difference between this app and <a href="https://github.com/microg" target="_blank" rel="nofollow">microG</a>?</b>
+
+microG is a open source re-implementation of the Google Play Services (client side). Among other things, <a href="https://github.com/microg/android_packages_apps_GmsCore/wiki/Signature-Spoofing" target="_blank" rel="nofollow">signature spoofing</a> is used to achieve this goal. In comparison, this app only aims to get Gcam running without Play Services. Therefore this app does not need any security compromising hacks or permissions (no Internet access, no storage access and of course no root access needed).
+
+<b>So what do I have to install?</b>
+
+Currently there are two versions of this app named "basic" and "photos". "Basic" (this app here) includes everything you need to get Gcam running but the button showing the last photo in full size will not work. The "photos" version has all features from "basic" and adds support for this button but you cannot have the Google Photos app installed for technical reasons.
+
+In short: if you have Google Photos installed go with "basic" else install the "photos" version.
+
 <b>It is strongly recommended to read the project page to learn more about compatibility and limitations.</b>
 
 This app is NOT compatible with devices running Google Play Services or microg, installation will fail on these devices. Also, the original Gcam (unmodded) version 7.6 or newer requires a compatible Android version (OS/ROM). More information about this on the project page as well.
