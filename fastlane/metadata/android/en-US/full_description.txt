@@ -6,9 +6,9 @@ microG is a open source re-implementation of the Google Play Services (client si
 
 <b>So what do I have to install?</b>
 
-Currently there are two versions of this app named "basic" and "photos". "Basic" (this app here) includes everything you need to get Gcam running but the button showing the last photo in full size will not work. The "photos" version has all features from "basic" and adds support for this button but you cannot have the Google Photos app installed for technical reasons.
+There are three flavors of this app named <i>basic</i>, <i>photos</i>, and <i>photosonly</i>. All come without UI and therefore have no icon in the app drawer. But of course the installation is listed in the Android settings (e.g. for uninstallation).
 
-In short: if you have Google Photos installed go with "basic" else install the "photos" version.
+<i>Basic</i> includes everything you need to get Gcam running but the button showing the last taken photo in full size will not work. The <i>photosonly</i> flavor supports this button but does not provide the features of the <i>basic</i> flavor; it is meant to be used on GrapheneOS alongside the sandboxed Play Services. The <i>photos</i> flavor has all features from <i>basic</i> and <i>photosonly</i> combined in one app.
 
 <b>It is strongly recommended to read the project page to learn more about compatibility and limitations.</b>
 
