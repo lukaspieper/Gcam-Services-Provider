@@ -1,0 +1,21 @@
+name: Close inactive issues
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+  close-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          days-before-stale: 14
+          days-before-close: 14
+          days-before-pr-stale: -1
+          days-before-pr-close: -1
+          any-of-labels: waiting
