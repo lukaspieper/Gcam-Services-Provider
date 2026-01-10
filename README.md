@@ -50,5 +50,7 @@ app.
 
 ### Gcam compatibility
 
+The following does not apply to the *photosonly* flavor!
+
 * Use a [compatible Android OS](https://github.com/lukaspieper/Gcam-Services-Provider/discussions/28) ([#22](https://github.com/lukaspieper/Gcam-Services-Provider/issues/22#issuecomment-814239882)) or modded Gcam
-* Gcam version >=10.x is currently unsupported (except on GrapheneOS) ([#190](https://github.com/lukaspieper/Gcam-Services-Provider/issues/190))
+* Gcam version >=10.x is currently unsupported ([#190](https://github.com/lukaspieper/Gcam-Services-Provider/issues/190))
