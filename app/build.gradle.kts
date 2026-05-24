@@ -1,15 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-}
-
-kotlin {
-    jvmToolchain(17)
 }
 
 android {
     namespace = "de.lukaspieper.gcam.services"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 19
