@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+    - name: Checkout repository
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       with:
         persist-credentials: false
 
@@ -18,16 +19,16 @@ jobs:
         distribution: 'temurin'
         java-version: 17
 
-    - name: Setup Gradle
+    - name: Set up Gradle
       uses: gradle/actions/setup-gradle@0723195856401067f7a2779048b490ace7a47d7c # v5.0.2
 
-    - name: Build basic APK with Gradle
+    - name: Assemble basic APK
       run: ./gradlew assembleBasicDebug
 
-    - name: Build photos APK with Gradle
+    - name: Assemble photos APK
       run: ./gradlew assemblePhotosDebug
 
-    - name: Build photosonly APK with Gradle
+    - name: Assemble photosonly APK
       run: ./gradlew assemblePhotosonlyDebug
 
     - name: Upload APKs
@@ -40,7 +41,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           persist-credentials: false
       
