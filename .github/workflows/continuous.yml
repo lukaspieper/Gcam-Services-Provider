@@ -1,6 +1,7 @@
 name: continuous
-
 on: [push, pull_request]
+
+permissions: {}
 
 jobs:
   build:
@@ -8,6 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v6
+      with:
+        persist-credentials: false
 
     - name: Set up JDK 17
       uses: actions/setup-java@v5
@@ -38,5 +41,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
       
       - uses: ashutoshgngwr/validate-fastlane-supply-metadata@v2
