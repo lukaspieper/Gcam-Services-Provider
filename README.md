@@ -54,3 +54,10 @@ The following does not apply to the *photosonly* flavor!
 
 * Use a [compatible Android OS](https://github.com/lukaspieper/Gcam-Services-Provider/discussions/28) ([#22](https://github.com/lukaspieper/Gcam-Services-Provider/issues/22#issuecomment-814239882)) or modded Gcam
 * Gcam version >=10.x is currently unsupported ([#190](https://github.com/lukaspieper/Gcam-Services-Provider/issues/190))
+
+### Signing certificate hash (SHA-256)
+
+```
+357c243c84da6b10b6b34fcdccabb6c9f839d8cf0f7d93d4f45f0213fed6bc5e
+```
+
